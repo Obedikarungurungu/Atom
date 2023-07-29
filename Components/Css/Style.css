@@ -7,14 +7,52 @@ html {
     color: #111111;
     box-sizing: border-box;
 }
-.logo-1{
+.logo img{
     width: 3rem;
     border-radius: 50%;
     border: 1px solid #eee;
 }
 
-.logo-img {
-    width: 3rem;
-    border-radius: 50%;
-    border: 1px solid #eee;
+.sidebar {
+    position: absolute;
+    border-radius: 15px;
+    top: 0.5rem;
+    left: 0.5rem;
+    height: 96vh;
+    width: 3.5rem;
+    background-color: #8895b3;
+    padding: 0.4rem 0.4rem;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active ~ .main-content {
+    left: 14rem;
+    width: calc(100% - 14rem);
+}
+
+.sidebar.active {
+    width: 14rem;
+}
+.sidebar #btn {
+    width: 2rem;
+    position: absolute;
+    background-color: #ffffff;
+    top: 0.9rem;
+    left: 3rem;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+.sidebar.active #btn {
+    left: 90%;
+}
+.sidebar .top {
+    color: #ffffff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    pointer-events: ;
 }
