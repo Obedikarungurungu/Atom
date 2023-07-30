@@ -7,11 +7,12 @@ html {
     color: #f1f1f1;
     box-sizing: border-box;
 }
-.logo {
+.logo img{
     color: #0d0c0d;
     background-color: #f1f1f1;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 90%;
     padding: 10px;
     border-radius: 8px;
@@ -27,39 +28,57 @@ html {
     padding-top: 0px;
     padding-bottom: 0px;
     margin: 0;
+    overflow: hidden ;
 }
 .logo img {
+    display: flex;
     padding: 10px;
-    width: 3rem;
+    width: 2rem;
     border-radius: 50%;
+    justify-content: center;
+}
+.logo div {
+    display: none;
 }
 
 .sidebar {
     border-radius: 15px;
-    width: 14rem;
+    width: 2.5rem;
     height: 92vh;
     position: fixed;
     top: 0.5rem;
-    left: 0.5rem;
+    left: .5rem;
     padding: 30px 15px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+}
+.sidebar:hover{
+    width: 14rem;
+    display: flex;
+    justify-content: flex-start;
+    overflow: visible;
 }
 .nav-links {
     list-style: none;
     padding: 0 15px;
 }
-ul li  {
-    background-color: white ;
-    border-radius: 20px;
+ul li {
+    position: relative;
+    color: #f1f1f1;
     margin: 30px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    padding-top: 30px;
 }
-
-ul li p {
+ul li img {
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    width: 1rem;
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
+
