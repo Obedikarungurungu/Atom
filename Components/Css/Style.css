@@ -7,40 +7,6 @@ html {
     color: #f1f1f1;
     box-sizing: border-box;
 }
-.logo img{
-    color: #0d0c0d;
-    background-color: #f1f1f1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    padding: 10px;
-    border-radius: 8px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 2rem ;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
-}
-.logo p {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin: 0;
-    overflow: hidden ;
-}
-.logo img {
-    display: flex;
-    padding: 10px;
-    width: 2rem;
-    border-radius: 50%;
-    justify-content: center;
-}
-.logo div {
-    display: none;
-}
-
 .sidebar {
     border-radius: 15px;
     width: 2.5rem;
@@ -60,6 +26,21 @@ html {
     justify-content: flex-start;
     overflow: visible;
 }
+
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 130px;
+}
+.logo img {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    width: 3.5rem;
+    border-radius: 50%; 
+}
+
 .nav-links {
     list-style: none;
     padding: 0 15px;
