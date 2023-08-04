@@ -6,6 +6,7 @@ html {
     font-size: large;
     color: #f1f1f1;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 .sidebar {
     border-radius: 15px;
@@ -74,20 +75,19 @@ html {
     position: absolute;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
-    width: 89%;
+    width: 91.5vw;
     height: 5rem;
     left: 6.5rem;
     top: -0.48rem;
     border-radius: 15px;
-
 }
 .header-images .note{
     position: absolute;
-    left: 67rem;
+    left: 83vw;
 }
 .header-images .profile{
     position: absolute;
-    left: 73rem;
+    left: 88vw;
 }
 /*.header-images .ends {
     position:absolute;
@@ -116,7 +116,7 @@ html {
     transition: 0.5s;
     box-shadow: 0 0 0 1px #0d0c0d;
 }
-.search:hover {
+.search.active {
     width: 360px;
 }
 .search .icon {
