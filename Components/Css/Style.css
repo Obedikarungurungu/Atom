@@ -21,14 +21,6 @@ html {
     display: flex;
     flex-direction: column;
 }
-/*.sidebar:hover{
-    width: 14rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    overflow: visible;
-}*/
-
 .logo {
     position: relative;
     display: flex;
@@ -89,17 +81,7 @@ html {
     position: absolute;
     left: 88vw;
 }
-/*.header-images .ends {
-    position:absolute;
-    left: 70rem;
-    isolation: isolate;
-    display: inline-flex;
-    justify-content: end;
-    align-items: center;
-}*/
-/*.header-images .search{
-    position: absolute;
-}*/
+
 .header-images img {
     background-color: #f1f1f1;
     border-radius: 50%;
@@ -116,7 +98,7 @@ html {
     transition: 0.5s;
     box-shadow: 0 0 0 1px #0d0c0d;
 }
-.search.active {
+.search:hover {
     width: 360px;
 }
 .search .icon {
