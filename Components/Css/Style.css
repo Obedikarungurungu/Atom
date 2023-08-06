@@ -5,8 +5,6 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     color: #f1f1f1;
-    box-sizing: border-box;
-    overflow-x: hidden;
 }
 .sidebar {
     border-radius: 15px;
@@ -70,7 +68,7 @@ html {
     position: absolute;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
-    width: 90.8vw;
+    width: 90.8%;
     height: 5rem;
     left: 6.5rem;
     top: -0.48rem;
@@ -193,4 +191,51 @@ html {
 }
 .pfp  {
     padding: 0;
+}
+
+.container {
+    width: 85%;
+    margin: 10px auto;
+}
+.carousel {
+    top: 10rem;
+    border: 2px solid #f1f1f1;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.slider {
+    height: 100%;
+    display: flex;
+    width: 400%; 
+}
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider section {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+.controls .arrow {
+    position: absolute;
+    top: 50%;
+}
+.arrow.left {
+    left: 10px;
+    cursor: pointer;
+}
+.arrow.right {
+    right: 10px;
+    cursor: pointer;
 }
