@@ -78,15 +78,19 @@ html {
 }
 .header-images .note{
     position: relative;
-    left:83rem;
+    left: 83rem;
 }
 .header-images .note img{
     padding: 0.8rem;
     width: 1.9rem;
 }
+.header-images .profile img{
+    padding: 0.8rem;
+    width: 1.9rem;
+}
 .header-images .profile{
-    position: absolute;
-    left: 93rem;
+    position: sticky;
+    left: 100rem;
 }
 
 .header-images img {
@@ -154,6 +158,23 @@ html {
     justify-content: center;
     align-items: center;
 }
+
+.friend-bar li {
+    color: #f1f1f1;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1px;
+}
+.friend-bar img {
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
 .add-button {
     top: 0.2rem;
     display: flex;
@@ -172,20 +193,4 @@ html {
 }
 .pfp  {
     padding: 0;
-}
-.friend-bar li {
-    color: #f1f1f1;
-    margin: 30px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1px;
-}
-.friend-bar img {
-    background-color: #f1f1f1;
-    border-radius: 50%;
-    width: 2.5rem;
-    display: flex;
-    justify-content: center;
-    padding: 8px;
 }
