@@ -5,9 +5,10 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     color: #f1f1f1;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .sidebar {
+    z-index: 10;
     border-radius: 15px;
     width: 3.5rem;
     height: 91vh;
@@ -33,6 +34,7 @@ html {
 }
 
 .nav-links {
+    z-index: 10;
     list-style: none;
     padding: 0 15px;
 }
@@ -144,6 +146,7 @@ html {
     transform: translate(6px, 6px) rotate(315deg);
 }
 .friend-bar {
+    z-index: 10;
     border-radius: 15px;
     width: 3.5rem;
     height: 70vh;
@@ -197,6 +200,7 @@ html {
 .container {
     width: 85%;
     margin: 10px auto;
+    z-index: -1;
 }
 .carousel {
     top: 10rem;
@@ -244,3 +248,30 @@ html {
     padding: 15px;
     cursor: pointer;
 }
+.album-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+}
+.album {
+    width: auto;
+    top: 10rem;
+    border: 2px solid #f1f1f1;
+    height: auto;
+    position: relative;
+    border-radius: 15px;
+
+}
+.album-image {
+    display: flex;
+    justify-content: center;
+}
+.album-image img{
+    width: 10rem;
+    border-radius: 15px;
+}
+@media only screen and (max-width: 1026px) { 
+    .album { 
+      display: none; 
+    } 
+  }
