@@ -5,6 +5,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     color: #f1f1f1;
+    overflow: hidden;
 }
 .sidebar {
     border-radius: 15px;
@@ -75,8 +76,8 @@ html {
     border-radius: 15px;
 }
 .header-images .note{
-    position: relative;
-    left: 83rem;
+    position: sticky;
+    left: 82rem;
 }
 .header-images .note img{
     padding: 0.8rem;
@@ -200,7 +201,7 @@ html {
 .carousel {
     top: 10rem;
     border: 2px solid #f1f1f1;
-    height: 400px;
+    height: 300px;
     position: relative;
     overflow: hidden;
     border-radius: 15px;
@@ -209,6 +210,7 @@ html {
     height: 100%;
     display: flex;
     width: 400%; 
+    transition: all 0.8s;
 }
 .slider img {
     width: 100%;
@@ -225,7 +227,6 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 1s;
 }
 .controls .arrow {
     position: absolute;
@@ -233,9 +234,13 @@ html {
 }
 .arrow.left {
     left: 10px;
+    background-color: #0d0c0d;
+    padding: 15px;
     cursor: pointer;
 }
 .arrow.right {
     right: 10px;
+    background-color: #0d0c0d;
+    padding: 15px;
     cursor: pointer;
 }
