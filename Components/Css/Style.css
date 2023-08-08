@@ -249,11 +249,34 @@ html {
     cursor: pointer;
 }
 .album-container {
+    position: relative;
+    top: 11rem;
+    margin: auto;
+    width: 1420px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 5rem;
+    gap: 1em;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
 }
 .album {
+    border-radius: 15px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+.album-image img {
+    width: 150px;
+    margin: 15px;
+    border-radius: 15px;
+}
+/* .album { 
     width: auto;
     top: 10rem;
     border: 2px solid #f1f1f1;
@@ -270,8 +293,8 @@ html {
     width: 10rem;
     border-radius: 15px;
 }
-@media only screen and (max-width: 1026px) { 
-    .album { 
-      display: none; 
-    } 
-  }
+.album-container .title {
+    display: flex;
+    justify-content: center;
+}
+*/
