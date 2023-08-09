@@ -8,7 +8,7 @@ html {
     color: #f1f1f1;
     overflow-x: hidden;
 }
-.sidebar {
+/* .sidebar {
     z-index: 10;
     border-radius: 15px;
     width: 3.5rem;
@@ -200,7 +200,7 @@ html {
 }
 
 .container {
-    width: 85%;
+    width: 87%;
     margin: 10px auto;
     z-index: -1;
 }
@@ -253,11 +253,12 @@ html {
 .album-container {
     position: relative;
     top: 11rem;
-    margin: auto;   
-    width: 75%;
+    margin:  0px auto 20px auto;   
+    width: 85%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 5rem;
+    padding: 1rem;
     gap: 1em;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
@@ -272,7 +273,13 @@ html {
     flex-direction: column;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
- }
+}
+.album-boxs {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    
+}
 .album-image img {
     transition: all 150xp 0.3s;
     width: 150px;
@@ -280,11 +287,51 @@ html {
     border-radius: 15px;
     position: relative;
 }
-.album-image img:hover {
+.album:hover {
     position: sticky;
-    transition: 0.2s;
-    width: 170px;
+    transition: 0.7s;
+    background: rgba(255, 255, 255, 0.485);
+    backdrop-filter: blur(5px);
 }
-.album .arist p {
-    margin-top: 0;
-}
+.album .title h3 { 
+    margin: 0 20px 0px 20px;
+} 
+.album .artist p { 
+    margin: 0 20px 50px 20px;
+} 
+.album-header {
+    margin: 0 0 0 4rem;
+} */
+
+#container {
+    height: 200px;
+    width: 800px;
+    border: 1px solid #333;
+    overflow: hidden;
+    margin: 25px auto;
+  }
+  
+  #box {
+    background: orange;
+    height: 180px;
+    width: 400px;
+    margin: 10px -400px;
+    -webkit-animation-name: move;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: right;
+    -webkit-animation-timing-function: linear;
+  }
+  
+  #box:hover {
+    -webkit-animation-play-state: paused;
+  }
+  
+  @-webkit-keyframes move {
+    0% {
+      margin-left: -400px;
+    }
+    100% {
+      margin-left: 800px;
+    }
+  }
