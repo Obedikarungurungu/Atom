@@ -8,7 +8,7 @@ html {
     color: #f1f1f1;
     overflow-x: hidden;
 }
-.sidebar {
+.sidebar { 
     z-index: 10;
     border-radius: 15px;
     width: 3.5rem;
