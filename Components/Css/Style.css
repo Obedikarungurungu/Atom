@@ -8,7 +8,7 @@ html {
     color: #f1f1f1;
     overflow-x: hidden;
 }
-/* .sidebar {
+.sidebar {
     z-index: 10;
     border-radius: 15px;
     width: 3.5rem;
@@ -201,13 +201,13 @@ html {
 
 .container {
     width: 87%;
-    margin: 10px auto;
+    margin: 5px auto;
     z-index: -1;
 }
 .carousel {
-    top: 10rem;
+    top: 8rem;
     border: 2px solid #f1f1f1;
-    height: 300px;
+    height: 400px;
     position: relative;
     overflow: hidden;
     border-radius: 15px;
@@ -301,37 +301,4 @@ html {
 } 
 .album-header {
     margin: 0 0 0 4rem;
-} */
-
-#container {
-    height: 200px;
-    width: 800px;
-    border: 1px solid #333;
-    overflow: hidden;
-    margin: 25px auto;
-  }
-  
-  #box {
-    background: orange;
-    height: 180px;
-    width: 400px;
-    margin: 10px -400px;
-    -webkit-animation-name: move;
-    -webkit-animation-duration: 4s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: right;
-    -webkit-animation-timing-function: linear;
-  }
-  
-  #box:hover {
-    -webkit-animation-play-state: paused;
-  }
-  
-  @-webkit-keyframes move {
-    0% {
-      margin-left: -400px;
-    }
-    100% {
-      margin-left: 800px;
-    }
-  }
+} 
