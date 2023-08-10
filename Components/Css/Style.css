@@ -56,7 +56,8 @@ html {
     padding: 15px;
 }
 .nav-links img:hover{
-    padding: 22px;
+    transition: 0.2s ease-out;
+    width: 35px;
 }
 .nav-links .settings {
     padding-top: 5rem;
@@ -74,7 +75,7 @@ html {
     backdrop-filter: blur(5px);
     width: 90.8%;
     height: 5rem;
-    left: 6.5rem;
+    left: 6.5%;
     top: -0.48rem;
     border-radius: 15px;
 }
@@ -153,7 +154,7 @@ html {
     height: 70vh;
     position: fixed;
     top: 6rem;
-    left: 92.5vw;
+    left: 94%;
     padding: 30px 15px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
@@ -199,14 +200,14 @@ html {
 }
 
 .container {
-    width: 85%;
-    margin: 10px auto;
+    width: 87%;
+    margin: 5px auto;
     z-index: -1;
 }
 .carousel {
-    top: 10rem;
+    top: 8rem;
     border: 2px solid #f1f1f1;
-    height: 300px;
+    height: 400px;
     position: relative;
     overflow: hidden;
     border-radius: 15px;
@@ -252,50 +253,55 @@ html {
 .album-container {
     position: relative;
     top: 11rem;
-    margin: auto;
-    width: 75%;
+    margin:  0px auto 20px auto;   
+    width: 85%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 5rem;
+    padding: 1rem;
     gap: 1em;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
     border-radius: 15px;
 }
-.album {
+.album { 
     border-radius: 15px;
     width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.585);
     backdrop-filter: blur(5px);
 }
+.album-boxs {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    
+}
 .album-image img {
+    transition: all 150xp 0.3s;
     width: 150px;
     margin: 15px;
     border-radius: 15px;
-}
-/* .album { 
-    width: auto;
-    top: 10rem;
-    border: 2px solid #f1f1f1;
-    height: auto;
     position: relative;
-    border-radius: 15px;
-
 }
-.album-image {
-    display: flex;
-    justify-content: center;
+.album:hover {
+    position: sticky;
+    transition: 0.1s ease-in;
+    background: rgba(0, 0, 0, 0.739);
+    backdrop-filter: blur(5px);
 }
-.album-image img{
-    width: 10rem;
-    border-radius: 15px;
+.album .title h3 { 
+    margin: 0 20px 0px 20px;
+} 
+.album .artist p { 
+    margin: 0 20px 50px 20px;
+} 
+.album-header {
+    margin: 0 0 0 4rem;
+} 
+.title h3{
+    text-align: center;
 }
-.album-container .title {
-    display: flex;
-    justify-content: center;
-}
-*/
